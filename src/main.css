@@ -343,4 +343,52 @@ h2 {
 .support .section-container .info-div .img-div img {
   width: 100%;
   max-width: 420px;
+}
+
+.info {
+  background: var(--SecondaryColor);
+}
+.info .info-container .title-div {
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.info .info-container .cards-div {
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.info .info-container .cards-div .single-card {
+  background: var(--whiteColor);
+  padding: 3rem 2rem;
+  border-radius: 10rem;
+  gap: 1rem;
+  text-align: center;
+  margin: auto;
+  height: 320px;
+  width: 90%;
+  max-width: 250px;
+}
+.info .info-container .cards-div .single-card .icon-div {
+  justify-content: center;
+  margin: auto;
+  background: var(--PrimaryColor);
+  width: -moz-max-content;
+  width: max-content;
+  height: 55px;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+.info .info-container .cards-div .single-card .icon-div .icon {
+  color: var(--whiteColor);
+}
+.info .info-container .cards-div .single-card .card-title {
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.info .info-container .cards-div .single-card .color-one {
+  background: var(--colorOne);
+}
+.info .info-container .cards-div .single-card .color-two {
+  background: var(--colorTwo);
 }/*# sourceMappingURL=main.css.map */

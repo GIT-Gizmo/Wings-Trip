@@ -412,3 +412,60 @@ h2 {
         }
     }
 }
+
+// Info section styling
+.info {
+    background: var(--SecondaryColor);
+    .info-container {
+        .title-div {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .cards-div {
+            gap: 1.5rem;
+            margin-top: 3rem;
+
+            .single-card {
+                background: var(--whiteColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem ;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+
+                .icon-div {
+                    justify-content: center;
+                    margin: auto;
+                    background: var(--PrimaryColor);
+                    width: max-content;
+                    height: 55px;
+                    padding: 1rem;
+                    border-radius: 3rem;
+
+                    .icon {
+                        color: var(--whiteColor);
+                    }
+                }
+
+                .card-title {
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .color-one {
+                    background: var(--colorOne);
+                }
+
+                .color-two {
+                    background: var(--colorTwo);
+                }
+            }
+        }
+    }
+}
