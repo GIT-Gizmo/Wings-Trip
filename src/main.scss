@@ -469,3 +469,34 @@ h2 {
         }
     }
 }
+
+// Lounge section styling
+.lounge {
+    .section-container {
+        gap: 1.5rem;
+
+        .img-div {
+            margin: auto;
+            img {
+                width: 100%;
+                max-width: 430px;
+            }
+        }
+
+        .text-div {
+            .grids {
+                margin-top: 1rem;
+                gap: 1.5rem;
+
+                .single-grid {
+                    .grid-title {
+                        display: block;
+                        padding-bottom: .5rem;
+                        font-weight: 500;
+                        color: var(--blackColor);
+                    }
+                }
+            }
+        }
+    }
+}

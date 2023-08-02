@@ -391,4 +391,25 @@ h2 {
 }
 .info .info-container .cards-div .single-card .color-two {
   background: var(--colorTwo);
+}
+
+.lounge .section-container {
+  gap: 1.5rem;
+}
+.lounge .section-container .img-div {
+  margin: auto;
+}
+.lounge .section-container .img-div img {
+  width: 100%;
+  max-width: 430px;
+}
+.lounge .section-container .text-div .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .section-container .text-div .grids .single-grid .grid-title {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
 }/*# sourceMappingURL=main.css.map */

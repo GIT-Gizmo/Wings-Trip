@@ -28,7 +28,7 @@ const Info = () => {
               <BsShieldCheck className='icon' />
             </div>
             <span className="card-title">Smart Checklist</span>
-            <p>You also have the option to contact airlines through your phone and make flight reservations.</p>
+            <p>Stay organized and travel confidently with our smart checklist, ensuring a smooth and stress-free journey for every trip.</p>
           </div>
 
           <div className="single-card grid">
@@ -36,7 +36,7 @@ const Info = () => {
               <BsBookmarkCheck className='icon' />
             </div>
             <span className="card-title">Save More</span>
-            <p>You also have the option to contact airlines through your phone and make flight reservations.</p>
+            <p>Unlock incredible savings and enjoy affordable airfares with our exclusive deals, making travel dreams a reality for less.</p>
           </div>
         </div>
       </div>
