@@ -500,3 +500,207 @@ h2 {
         }
     }
 }
+
+// Travelers section styling
+.travelers {
+    .section-container {
+        text-align: center;
+
+        .travelers-container {
+            margin-top: 1rem;
+            gap: 1.5rem;
+
+            .single-traveler {
+                position: relative;
+                height: 320px;
+                width: 85%;
+                max-width: 250px;
+                overflow: hidden;
+                border-radius: 10rem;
+                gap: 1rem;
+                margin: auto;
+
+                .destination-image, .travelers-image, .travelers-name {
+                    position: absolute;
+                }
+
+                .destination-image {
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    object-fit: cover;
+                }
+
+                .travelers-image {
+                    height: 50px;
+                    width: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    bottom: 30px;
+                    left: 40%;
+                    transform: translateX(-50%);
+                    border: 5px solid rgba(225, 225, 225, 0.637);
+                    transition: var(--transition);
+                    animation: animated 2.3s infinite;
+                }
+
+                @keyframes animated {
+                    0% {
+                        transform: translateY(0px);
+                    }
+                    50% {
+                        transform: translateY(8px);
+                    }
+                    100% {
+                        transform: translateY(0px);
+                    }
+                }
+
+                .travelers-name {
+                    bottom: -100%;
+                    width: 100%;
+                    height: max-content;
+                    background: var(--whiteColor);
+                    padding: 1.5rem 1rem;
+                    transition: var(--transition);
+                    animation: animatedBorders 2.3s infinite;
+
+                    span {
+                        display: block;
+                        color: black;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: var(--PrimaryColor);
+                        font-style: italic;
+                    }
+                }
+
+                @keyframes animatedBorders {
+                    0% {
+                        border-radius: 0rem;
+                    }
+                    50% {
+                        border-radius: 2rem;
+                    }
+                    100% {
+                        border-radius: 0rem;
+                    }
+                }
+
+                &:hover {
+                    .travelers-name {
+                        bottom: 0;
+                        transition: .5s ease-in-out;
+                    }
+
+                    .travelers-image {
+                        bottom: 100px;
+                        transition: .5s ease-in-out .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Subcribe section styling
+.subscribe {
+    background: var(--SecondaryColor);
+
+    .section-container {
+        text-align: center;
+
+        .input-div {
+            margin-top: 1rem;
+            flex-direction: column;
+            background: var(--whiteColor);
+            border-radius: 1rem;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                padding: 1rem .5rem;
+
+                &::placeholder {
+                    font-size: 13px;
+                    opacity: .5;
+                }
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Footer section styling
+.footer {
+    background: var(--SecondaryColor);
+
+    .section-container {
+        gap: 2rem;
+
+        .grid-one {
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logo-div {
+                .logo {
+                    width: 20%;
+                }
+            }
+
+            .social-icon {
+                margin-top: 1rem;
+                gap: 1rem;
+
+                .icon {
+                    height: 30px;
+                    width: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid var(--boxShadow);
+                    padding: .4rem;
+                    color: var(--greyText);
+
+                    &:hover {
+                        background: var(--PrimaryColor);
+                        transform: translateY(-7px);
+                        transition: var(--transition);
+                        border: 1px solid var(--PrimaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+
+        .footer-links {
+            display: grid;
+
+            .link-title {
+                color: var(--blackColor);
+                font-weight: 500;
+                display: block;
+                padding-bottom: 1rem;
+            }
+
+            li a {
+                display: block;
+                color: var(--greyText);
+                transition: var(--transition);
+
+                &:hover {
+                    transform: translateX(7px);
+                    color: var(--PrimaryColor);
+                }
+            }
+        }
+    }
+}

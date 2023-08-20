@@ -412,4 +412,179 @@ h2 {
   padding-bottom: 0.5rem;
   font-weight: 500;
   color: var(--blackColor);
+}
+
+.travelers .section-container {
+  text-align: center;
+}
+.travelers .section-container .travelers-container {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.travelers .section-container .travelers-container .single-traveler {
+  position: relative;
+  height: 320px;
+  width: 85%;
+  max-width: 250px;
+  overflow: hidden;
+  border-radius: 10rem;
+  gap: 1rem;
+  margin: auto;
+}
+.travelers .section-container .travelers-container .single-traveler .destination-image, .travelers .section-container .travelers-container .single-traveler .travelers-image, .travelers .section-container .travelers-container .single-traveler .travelers-name {
+  position: absolute;
+}
+.travelers .section-container .travelers-container .single-traveler .destination-image {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.travelers .section-container .travelers-container .single-traveler .travelers-image {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 40%;
+  transform: translateX(-50%);
+  border: 5px solid rgba(225, 225, 225, 0.637);
+  transition: var(--transition);
+  animation: animated 2.3s infinite;
+}
+@keyframes animated {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.travelers .section-container .travelers-container .single-traveler .travelers-name {
+  bottom: -100%;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background: var(--whiteColor);
+  padding: 1.5rem 1rem;
+  transition: var(--transition);
+  animation: animatedBorders 2.3s infinite;
+}
+.travelers .section-container .travelers-container .single-traveler .travelers-name span {
+  display: block;
+  color: black;
+  font-weight: 700;
+}
+.travelers .section-container .travelers-container .single-traveler .travelers-name p {
+  color: var(--PrimaryColor);
+  font-style: italic;
+}
+@keyframes animatedBorders {
+  0% {
+    border-radius: 0rem;
+  }
+  50% {
+    border-radius: 2rem;
+  }
+  100% {
+    border-radius: 0rem;
+  }
+}
+.travelers .section-container .travelers-container .single-traveler:hover .travelers-name {
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+.travelers .section-container .travelers-container .single-traveler:hover .travelers-image {
+  bottom: 100px;
+  transition: 0.5s ease-in-out 0.3s;
+}
+
+.subscribe {
+  background: var(--SecondaryColor);
+}
+.subscribe .section-container {
+  text-align: center;
+}
+.subscribe .section-container .input-div {
+  margin-top: 1rem;
+  flex-direction: column;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+}
+.subscribe .section-container .input-div input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subscribe .section-container .input-div input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subscribe .section-container .input-div input::placeholder {
+  font-size: 13px;
+  opacity: 0.5;
+}
+.subscribe .section-container .input-div .btn {
+  width: 100%;
+}
+
+.footer {
+  background: var(--SecondaryColor);
+}
+.footer .section-container {
+  gap: 2rem;
+}
+.footer .section-container .grid-one {
+  gap: 1rem;
+  justify-content: center;
+  margin: auto;
+}
+.footer .section-container .grid-one .logo-div .logo {
+  width: 20%;
+}
+.footer .section-container .grid-one .social-icon {
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.footer .section-container .grid-one .social-icon .icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 10rem;
+  border: 1px solid var(--boxShadow);
+  padding: 0.4rem;
+  color: var(--greyText);
+}
+.footer .section-container .grid-one .social-icon .icon:hover {
+  background: var(--PrimaryColor);
+  transform: translateY(-7px);
+  transition: var(--transition);
+  border: 1px solid var(--PrimaryColor);
+  color: var(--whiteColor);
+}
+.footer .section-container .footer-links {
+  display: grid;
+}
+.footer .section-container .footer-links .link-title {
+  color: var(--blackColor);
+  font-weight: 500;
+  display: block;
+  padding-bottom: 1rem;
+}
+.footer .section-container .footer-links li a {
+  display: block;
+  color: var(--greyText);
+  transition: var(--transition);
+}
+.footer .section-container .footer-links li a:hover {
+  transform: translateX(7px);
+  color: var(--PrimaryColor);
 }/*# sourceMappingURL=main.css.map */
