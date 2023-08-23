@@ -41,7 +41,7 @@ useEffect(() => {
 
           </div>
 
-          <div data-aos='fade-left' data-aos-duration='1000' className="img-div">
+          <div data-aos='fade-up' data-aos-duration='1000' className="img-div">
             <img src={gridImage} alt="Airplane window view" />
           </div>
         </div>
