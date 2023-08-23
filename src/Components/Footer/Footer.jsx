@@ -8,6 +8,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 const Footer = () => {
   return (
     <footer className="footer">
+
       <section className="section-container container grid">
         <div className="grid-one">
           <figure className="logo-div">
@@ -87,6 +88,10 @@ const Footer = () => {
             <a href="">Programme Rules</a>
           </li>
         </section>
+      </section>
+
+      <section className="copyright-div flex">
+        <p>Developed by <a href="https://davecodes.vercel.app" target='_blank' rel='noreferrer'>dave_gizmo</a></p>
       </section>
     </footer>
   )

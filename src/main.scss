@@ -299,6 +299,7 @@ h2 {
                 border-radius: 3rem;
                 width: 80%;
                 text-align: center;
+                cursor: pointer;
 
                 &:hover {
                     background: var(--PrimaryColor);
@@ -354,6 +355,10 @@ h2 {
                         }
                     }
                 }
+            }
+
+            .btn-block {
+                justify-content: center;
             }
         }
     }
@@ -595,12 +600,12 @@ h2 {
                 &:hover {
                     .travelers-name {
                         bottom: 0;
-                        transition: .5s ease-in-out;
+                        transition: 1s ease-in-out;
                     }
 
                     .travelers-image {
                         bottom: 100px;
-                        transition: .5s ease-in-out .3s;
+                        transition: .5s ease-in-out .5s;
                     }
                 }
             }
@@ -695,6 +700,8 @@ h2 {
                 display: block;
                 color: var(--greyText);
                 transition: var(--transition);
+                width: max-content;
+                padding: .3rem 0;
 
                 &:hover {
                     transform: translateX(7px);
@@ -703,4 +710,511 @@ h2 {
             }
         }
     }
+
+    .copyright-div {
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        gap: 1rem;
+        border-top: 1px solid var(--greyText);
+        text-align: center;
+    }
+}
+
+
+// Media Queries
+@media screen and (min-width: 480px) {
+    //Home section styling
+    .home {
+        padding-top: 12rem;
+    }
+
+    //Search section styling
+    .search {
+        .section-container {
+            .search-inputs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .btn {
+                    transform: translateX(50%);
+                }
+            }
+        }
+    }
+
+    //Travel section styling
+    .travelers {
+        .section-container {
+            .travelers-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    //Subscribe section styling
+    .subscribe {
+        .section-container {
+            max-width: 80%;
+            margin: auto;
+
+            .input-div {
+                flex-direction: row;
+                padding: 0 .5rem;
+                border-radius: 3rem;
+            }
+        }
+    }
+
+    //Footer section styling
+    .footer {
+        .section-container {
+            align-items: flex-start;
+            grid-template-columns: repeat(2, 1fr);
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 570px) {
+    //Home section styling
+    .home {
+        .main-text {
+            width: 80%;
+        }
+
+        .home-images {
+            .video {
+                border-radius: 15rem;
+            }
+
+            .plane {
+                position: absolute;
+                width: 95%;
+                top: -8%;
+            }
+        }
+    }
+
+    //Search section styling
+    .search {
+        .section-container {
+            .btns {
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+        }
+    }
+
+    //Support section styling
+    .support {
+        .section-container {
+            .info-div {
+                .text-div {
+                    margin: 2rem 0;
+                    grid-template-columns: repeat(2,1fr);
+
+                    // .single-info:last-of-type {
+                    //     transform: translateX(55%);
+                    //     margin-top: 2rem;
+                    // }
+                }
+            }
+        }
+    }
+
+    //Info section styling
+    .info {
+        .info-container {
+            .title-div {
+                flex-direction: row;
+
+                h2 {
+                    text-align: left;
+                    max-width: 500px;
+                }
+            }
+
+            .cards-div {
+                grid-template-columns: repeat(2, 1fr);
+
+                // .single-card:last-of-type {
+                //     transform: translateX(55%);
+                //     margin-top: 2rem;
+                // }
+            }
+        }
+    }
+
+    //Lounge section styling
+    .lounge {
+        .section-container {
+            .text-div {
+                .grids {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    //Subscribe section styling
+    .subscribe {
+        .section-container {
+            .input-div {
+                justify-content: space-between;
+
+                .btn {
+                    max-width: max-content;
+                }
+            }
+        }
+    }
+
+    //Footer section styling
+    .footer {
+        .section-container {
+            padding-top: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .home {
+        .main-text {
+        width: 80%;
+        }
+
+        .home-media {
+            .video-div {
+                width: 80%;
+                .video {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15rem;
+                }
+            }
+
+            .plane {
+                width: 95%;
+                top: -8%;
+            }
+        }
+    }
+
+    //Search section styling
+    .search {
+        .section-container {
+            .search-inputs {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    //Footer section styling
+    .footer {
+        .section-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    // Navbar section styling
+    .navbar {
+        align-items: center;
+        .navbar-one {
+            .none {
+                display: flex;
+                gap: 1.5rem;
+
+                li {
+                    font-size: 13px;
+                    gap: .5rem;
+                    color: var(--textColor);
+                    &:hover {
+                        color: var(--PrimaryColor);
+                    text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .navbar-two {
+            justify-content: space-between;
+            align-items: center;
+
+            .logo-div {
+                .logo {
+                    max-width: 20%;
+                }
+            }
+
+            .menu {
+                flex-direction: row;
+                gap: .5rem;
+
+                .list-item {
+                    padding: 0 .5rem;
+                    font-size: 14px;
+                    cursor: pointer;
+                    color: var(--textColor);
+                    font-weight: 700;
+
+                    &:hover {
+                        color: var(--PrimaryColor);
+
+                    }
+                }
+            }
+
+            .btn-one,.toggle-icon {
+                display: none;
+            }
+        }
+    }
+
+    // Search section styling
+    .search {
+        .section-container {
+            .btns {
+                width: 70%;
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+            .search-inputs {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+
+                .btn {
+                    transform: translateX(175%);
+                }
+            }
+        }
+    }
+
+    // Support section styling
+    .support {
+        .section-container {
+            .info-div {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-top: 5rem;
+                .text-div {
+                    margin-top: 0rem;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+
+    // Info section styling
+    .info {
+        .info-container {
+            padding-right: 0 6rem;
+            .title-div {
+                width: 90%;
+                margin: auto;
+                align-items: center;
+            }
+
+            .cards-div {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    //Lounge section styling
+    .lounge {
+        .section-container {
+            grid-template-columns: repeat(2, 1fr);
+            .text-div {
+                grid-area: 1;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    // Home section styling
+    .home {
+        padding-top: 13rem;
+        .main-text {
+            width: 70%;
+            padding-bottom: 1.5rem;
+            font-size: 22px;
+            line-height: 4rem;
+        }
+    }
+
+    //Search section styling
+    .search {
+        .section-container {
+            .search-inputs {
+                grid-template-columns: repeat(5, 1fr);
+
+                .btn {
+                    transform: unset;
+                }
+            }
+        }
+    }
+
+    // Travelers section styling
+    .travelers {
+        .section-container {
+            .travelers-container {
+                grid-template-columns: repeat(4, 1fr);
+                margin: 3rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    // Default styling
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .section {
+        padding: 6rem 0 4rem;
+    }
+
+    .container {
+        width: 75%;
+        margin: auto;
+    }
+
+    // Navbar section styling
+    .navbar {
+        .navbar-one, .navbar-two {
+            padding: 1.5rem 5rem;
+        }
+
+        .navbar-with-bg {
+            padding: 0 5rem;
+        }
+    }
+
+    // Search section styling
+    .search {
+        width: 85%;
+    }
+
+    // Home section styling
+    .home {
+        .main-text {
+            width: 60%;
+            font-size: 25px;
+            line-height: 4rem;
+        }
+
+        .home-media {
+            .video-div {
+                width: 90%;
+                height: 300px;
+
+                .video {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 15rem;
+                }
+            }
+
+            .plane {
+                width: 100%;
+                top: -10%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1106px) {
+    // Subscribe section styling
+    .subscribe {
+        .section-container {
+            max-width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1332px) {
+    // Navbar section styling
+    .navbar {
+        .navbar-two {
+            .menu {
+                gap: 1rem;
+
+                .list-item {
+                    padding: 0 1.5rem;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // Support section styling
+    .support {
+        .section-container  {
+            .info-div {
+                gap: 1rem;
+
+                .text-div {
+                    .single-info {
+                        p {
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Subscribe section styling
+    .subscribe {
+        .section-container {
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    // Home section styling
+    .home {
+        .home-media {
+            .plane {
+                width: 90%;
+                top: -30%;
+            }
+        }
+    }
+}
+
+::selection {
+    background: var(--PrimaryColor);
+    color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--PrimaryColor);
+    border-radius: 10px;
 }
