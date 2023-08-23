@@ -1,12 +1,14 @@
-import React from 'react'
-import maldives from '../../assets/maldives.jpg'
-import santorini from '../../assets/santorini.jpg'
-import prague from '../../assets/prague.jpg'
-import tokyo from '../../assets/tokyo.jpg'
-import traveler1 from '../../assets/traveler1.jpg'
-import traveler2 from '../../assets/traveler2.jpg'
-import traveler3 from '../../assets/traveler3.jpg'
-import traveler4 from '../../assets/traveler4.jpg'
+import React, {useEffect} from 'react';
+import maldives from '../../assets/maldives.jpg';
+import santorini from '../../assets/santorini.jpg';
+import prague from '../../assets/prague.jpg';
+import tokyo from '../../assets/tokyo.jpg';
+import traveler1 from '../../assets/traveler1.jpg';
+import traveler2 from '../../assets/traveler2.jpg';
+import traveler3 from '../../assets/traveler3.jpg';
+import traveler4 from '../../assets/traveler4.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 // Using high order array method called Map to display all the data
@@ -50,17 +52,22 @@ const travelers = [
 ]
 
 const Travelers = () => {
+  // useEffect to set animation duration
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <div className='travelers container section'>
       <div className="section-container">
-        <h2>This Month's Top Adventurers!</h2>
+        <h2 data-aos='fade-down' data-aos-duration='1000'>This Month's Top Adventurers!</h2>
 
         <div className="travelers-container grid">
           
           {
             travelers.map(({ id, destinationImage, travelerImage, travelerName, socialLink })=>{
               return(
-                <div key={id} className="single-traveler">
+                <div data-aos='fade-up' data-aos-duration='1000' key={id} className="single-traveler">
                   <img src={destinationImage} alt="image of travelers destination" className="destination-image" />
 
                   <div className="travelers-details">

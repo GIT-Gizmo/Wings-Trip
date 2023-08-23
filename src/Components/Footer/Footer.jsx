@@ -1,16 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import logo from '../../assets/logo.png';
-import { TiSocialFacebook } from 'react-icons/ti'
-import { AiOutlineTwitter } from 'react-icons/ai'
-import { FaPinterestP } from 'react-icons/fa'
-import { AiOutlineInstagram } from 'react-icons/ai'
+import { TiSocialFacebook } from 'react-icons/ti';
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { FaPinterestP } from 'react-icons/fa';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+  // useEffect to set animation duration
+  useEffect(() => {
+    Aos.init({duration: 2000})
+  }, [])
+
   return (
     <footer className="footer">
 
       <section className="section-container container grid">
-        <div className="grid-one">
+        <div data-aos='fade-up' data-aos-duration='1000' className="grid-one">
           <figure className="logo-div">
             <img className='logo' src={logo} alt="Footer logo" />
           </figure>
@@ -23,7 +30,7 @@ const Footer = () => {
           </aside>
         </div>
 
-        <section className="footer-links">
+        <section data-aos='fade-up' data-aos-duration='1000' className="footer-links">
           <strong className="link-title">Information</strong>
           <li>
             <a href="">Home</a>
@@ -45,7 +52,7 @@ const Footer = () => {
           </li>
         </section>
 
-        <section className="footer-links">
+        <section data-aos='fade-up' data-aos-duration='1000' className="footer-links">
           <strong className="link-title">Quick Guide</strong>
           <li>
             <a href="">FAQ</a>
@@ -67,7 +74,7 @@ const Footer = () => {
           </li>
         </section>
 
-        <section className="footer-links">
+        <section data-aos='fade-up' data-aos-duration='1000' className="footer-links">
           <strong className="link-title">Information</strong>
           <li>
             <a href="">Chauffeur</a>
