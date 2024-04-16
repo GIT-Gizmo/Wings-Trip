@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
-import maldives from '../../assets/maldives.jpg';
-import santorini from '../../assets/santorini.jpg';
-import prague from '../../assets/prague.jpg';
-import tokyo from '../../assets/tokyo.jpg';
-import traveler1 from '../../assets/traveler1.jpg';
-import traveler2 from '../../assets/traveler2.jpg';
-import traveler3 from '../../assets/traveler3.jpg';
-import traveler4 from '../../assets/traveler4.jpg';
+import maldives from '../../assets/maldives.webp';
+import santorini from '../../assets/santorini.webp';
+import prague from '../../assets/prague.webp';
+import tokyo from '../../assets/tokyo.webp';
+import traveler1 from '../../assets/traveler1.webp';
+import traveler2 from '../../assets/traveler2.webp';
+import traveler3 from '../../assets/traveler3.webp';
+import traveler4 from '../../assets/traveler4.webp';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

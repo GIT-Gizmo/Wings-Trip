@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import gridImage from '../../assets/grid-image.png';
+import gridImage from '../../assets/grid-image.webp';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

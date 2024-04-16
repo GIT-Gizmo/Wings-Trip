@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import { TiSocialFacebook } from 'react-icons/ti';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaPinterestP } from 'react-icons/fa';

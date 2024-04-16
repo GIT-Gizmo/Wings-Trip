@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {SiConsul} from 'react-icons/si';
 import {BsPhoneVibrate} from 'react-icons/bs';
 import {AiOutlineGlobal } from 'react-icons/ai';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import {CgMenuGridO} from 'react-icons/cg';
 
 const Navbar = () => {

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import imageGrid from '../../assets/imageGrid.png';
+import imageGrid from '../../assets/imageGrid.webp';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 

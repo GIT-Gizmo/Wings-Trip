@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import video from '../../assets/video.mp4';
-import airplane from '../../assets/plane.png';
+import airplane from '../../assets/plane.webp';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
